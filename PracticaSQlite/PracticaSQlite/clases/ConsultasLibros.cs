@@ -83,10 +83,10 @@ namespace PracticaSQlite.clases
 		public Task<List<ViewLibros>> GetAllLibrosAsync()
 		{
 			string query = "SELECT Libros.Id_lib, Libros.titulo, Libros.año_edicion, " +
-				"Autores.nombre, Autores.apellido_pat, Genero.tipo, Editorial.nombre_editorial " +
+				"Autores.nombre_autor, Autores.apellido_pat, Genero.tipo, Editoriales.nombre_editorial " +
 				"FROM Libros JOIN Autores ON Autores.Id_Aut=Libros.id_aut " +
 				"JOIN Genero ON Genero.Id_gen=Libros.id_gen " +
-				"JOIN Editorial ON Editorial.Id_edit=Libros.id_edit";
+				"JOIN Editoriales ON Editoriales.Id_edit=Libros.id_edit";
 
 			return Database.QueryAsync<ViewLibros>(query);
 		}

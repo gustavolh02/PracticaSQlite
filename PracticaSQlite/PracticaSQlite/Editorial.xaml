@@ -17,7 +17,7 @@
                 </Grid.ColumnDefinitions>
                 <Button x:Name="guarda" Text="Registrar" Clicked="guardar" Grid.Row="0" Grid.Column="0"/>
                 <Button Text="Cancelar" Clicked="limpiar" Grid.Row="0" Grid.Column="1"/>
-                <Button Text="Mostrar" Clicked="mostrar" Grid.Row="1" Grid.Column="0"/>
+                <Button Text="Mostrar" Clicked="mostar1" Grid.Row="1" Grid.Column="0"/>
                 <Button Text="Consultar Nombre" Clicked="buscar" Grid.Row="1" Grid.Column="1"/>
             </Grid>
         </StackLayout>

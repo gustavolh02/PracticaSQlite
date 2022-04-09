@@ -40,7 +40,7 @@ namespace PracticaSQlite
             else
                 await DisplayAlert("Registrando...", "Faltan datos", "OK");
         }
-        void mostar(object sender, EventArgs e)
+        void mostar1(object sender, EventArgs e)
         {
             Navigation.PushAsync(new ListarEditoriales());
         }
