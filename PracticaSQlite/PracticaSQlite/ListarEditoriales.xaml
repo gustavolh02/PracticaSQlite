@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticaSQlite.ListarEditoriales">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+                <Button Text="Mostrar Editoriales" Clicked="mostarDatos" HorizontalOptions="Start"/>
+                <Button Text="Regresar" Clicked="atras" HorizontalOptions="End"/>
+            </Grid>
+            <ListView x:Name="ListaEditoriales" ItemsSource="{Binding Editoriales}" BackgroundColor="#F0ECEC" SelectionMode="None" Footer="">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Margin="0,10">
+                                <Label Text="{Binding Id_edit}" FontSize="15"/>
+                                <Label Text="{Binding nombre_editorial}" FontSize="15"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

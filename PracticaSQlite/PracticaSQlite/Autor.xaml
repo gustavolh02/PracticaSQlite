@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticaSQlite.Autor">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Gestionar Autores" FontSize="Title" FontAttributes="Bold,Italic"
+                   HorizontalOptions="CenterAndExpand" Margin="3" />
+                <Entry Placeholder="Nombre" x:Name="txtNom" />
+                <Entry Placeholder="Apellido paterno" x:Name="txtAp" />
+                <Entry Placeholder="Apellido materno" x:Name="txtAm" />
+                <Entry Placeholder="Nacionalidad" x:Name="txtNacionalidad" />
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="guarda" Text="Registrar" Clicked="guardar" Grid.Row="0" Grid.Column="0"/>
+                    <Button Text="Cancelar" Clicked="limpiar" Grid.Row="0" Grid.Column="1"/>
+                    <Button Text="Mostrar" Clicked="mostrar" Grid.Row="1" Grid.Column="0"/>
+                    <Button Text="Consultar Nombre" Clicked="buscar" Grid.Row="1" Grid.Column="1"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticaSQlite.Android", "PracticaSQlite\PracticaSQlite.Android\PracticaSQlite.Android.csproj", "{C514C6DD-3ECE-424D-A596-455AD8E2D268}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracticaSQlite", "PracticaSQlite\PracticaSQlite\PracticaSQlite.csproj", "{4D81B65A-0032-422A-BAF3-27744DDFB667}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C514C6DD-3ECE-424D-A596-455AD8E2D268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C514C6DD-3ECE-424D-A596-455AD8E2D268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C514C6DD-3ECE-424D-A596-455AD8E2D268}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C514C6DD-3ECE-424D-A596-455AD8E2D268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C514C6DD-3ECE-424D-A596-455AD8E2D268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C514C6DD-3ECE-424D-A596-455AD8E2D268}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4D81B65A-0032-422A-BAF3-27744DDFB667}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D81B65A-0032-422A-BAF3-27744DDFB667}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D81B65A-0032-422A-BAF3-27744DDFB667}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4D81B65A-0032-422A-BAF3-27744DDFB667}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D81B65A-0032-422A-BAF3-27744DDFB667}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D81B65A-0032-422A-BAF3-27744DDFB667}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DF7851E-0D04-4D05-9E14-50C2995B825F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticaSQlite.ListarAutores">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+                <Button Text="Mostrar Autores" Clicked="mostarDatos" HorizontalOptions="Start"/>
+                <Button Text="Regresar" Clicked="atras" HorizontalOptions="End"/>
+            </Grid>
+            <ListView x:Name="ListaAutores" ItemsSource="{Binding Autores}" BackgroundColor="#F0ECEC" SelectionMode="None" Footer="">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Margin="0,10">
+                                <Label Text="{Binding id_aut}" FontSize="15"/>
+                                <Label Text="{Binding nombre_autor}" FontSize="15"/>
+                                <Label Text="{Binding apellido_pat}" FontSize="15"/>
+                                <Label Text="{Binding apellido_mat}" FontSize="15"/>
+                                <Label Text="{Binding nacionalidad}" FontSize="15"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticaSQlite.ListarLibros">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+                <Button Text="Mostrar Libros" Clicked="mostrarDatos" HorizontalOptions="Start"/>
+                <Button Text="Regresar" Clicked="atras" HorizontalOptions="End"/>
+            </Grid>
+            <ScrollView>
+                <ListView x:Name="ListaLibros" ItemsSource="{Binding ViewLibros}" BackgroundColor="#F0ECEC" SelectionMode="None" Footer="">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" Margin="5,5">
+                                    <Label Text="{Binding Id_lib}" FontSize="12"/>
+                                    <Label Text="{Binding titulo}" FontSize="12"/>
+                                    <Label Text="{Binding año_edicion}" FontSize="12"/>
+                                    <Label Text="{Binding autor}" FontSize="12"/>
+                                    <Label Text="{Binding tipo}" FontSize="12"/>
+                                    <Label Text="{Binding nombre_editorial}" FontSize="12"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

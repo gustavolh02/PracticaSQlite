@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticaSQlite.Libro">
+    <ContentPage.Content>
+        <StackLayout Margin="10">
+            <Label Text="Gestionar Libros" FontSize="Title" FontAttributes="Bold,Italic" HorizontalOptions="CenterAndExpand" Margin="3" />
+            <Entry Placeholder="Titulo del libro" x:Name="txtTitulo"/>
+            <Entry Placeholder="Año de edicion" x:Name="txtEdi" Keyboard="Numeric"/>
+            <Picker x:Name="pkAutor" Title="Selecciona un autor" ItemsSource="{Binding listaA}"/>
+            <Picker x:Name="pkGen" Title="Selecciona un autor" ItemsSource="{Binding listaG}"/>
+            <Picker x:Name="pkEdit" Title="Selecciona un autor" ItemsSource="{Binding listaE}"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="guarda" Text="Registrar" Clicked="guardar" Grid.Row="0" Grid.Column="0"/>
+                <Button Text="Cancelar" Clicked="limpiar" Grid.Row="0" Grid.Column="1"/>
+                <Button Text="Mostrar" Clicked="mostar" Grid.Row="1" Grid.Column="0"/>
+                <Button Text="Consultar Nombre" Clicked="buscar" Grid.Row="1" Grid.Column="1"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
