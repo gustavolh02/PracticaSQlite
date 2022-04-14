@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using PracticaSQlite.clases;
-
+//
 namespace PracticaSQlite
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
